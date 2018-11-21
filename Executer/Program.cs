@@ -10,7 +10,7 @@ namespace Executer
     {
         static void Main()
         {
-            var a = Assembly.LoadFrom("MyLibrary.dll");
+            var a = Assembly.LoadFrom("../../../MyLibrary/bin/Debug/MyLibrary.dll");
            
             /*
             Aggiungete al Main del codice che, sfruttando la reflection, invochi tutti i metodi pubblici 
