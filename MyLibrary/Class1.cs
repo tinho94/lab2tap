@@ -9,6 +9,7 @@ namespace MyLibrary
 {
     public class Class1
     {
+        public Class1() { }
         [ExecuteMe]
         public void M1()
         {
@@ -32,6 +33,7 @@ namespace MyLibrary
 
     public class Class2
     {
+        public Class2() { }
         [ExecuteMe]
         public void N1()
         {
