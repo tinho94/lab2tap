@@ -54,10 +54,6 @@
       <Project>{d83c70cc-af32-4ad6-89f7-64b5f9185964}</Project>
       <Name>MyAttribute</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj">
-      <Project>{5ccc1a0a-0523-46e4-829b-99a46f11002e}</Project>
-      <Name>MyLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
