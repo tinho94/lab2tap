@@ -9,6 +9,7 @@ namespace MyLibrary
 {
     public class Class1
     {
+        int a=10;
         public Class1() { }
         [ExecuteMe]
         public void M1()
@@ -29,6 +30,7 @@ namespace MyLibrary
         {
             Console.WriteLine("M3 s1={0} s2={1}", s1, s2);
         }
+        
     }
 
     public class Class2
@@ -52,6 +54,22 @@ namespace MyLibrary
         public void N3(string s1, string s2)
         {
             Console.WriteLine("N3 s1={0} s2={1}", s1, s2);
+        }
+    }
+
+    public class ExtraClass
+    {
+        private int _n;
+
+        public ExtraClass(int n)
+        {
+            _n = n;
+        }
+
+        [ExecuteMe("extra", "extra2")]
+        public void extramethod(string s1, string s2)
+        {
+            Console.WriteLine("extramethod s1={0} s2={1}", s1, s2);
         }
     }
 
