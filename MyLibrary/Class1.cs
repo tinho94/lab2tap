@@ -33,6 +33,22 @@ namespace MyLibrary
         
     }
 
+    public class ExtraClass
+    {
+        private int _n;
+
+        public ExtraClass(int n)
+        {
+            _n = n;
+        }
+
+        [ExecuteMe("extra", "extra2")]
+        public void extramethod(string s1, string s2)
+        {
+            Console.WriteLine("extramethod s1={0} s2={1}", s1, s2);
+        }
+    }
+
     public class Class2
     {
         public Class2() { }
@@ -57,11 +73,11 @@ namespace MyLibrary
         }
     }
 
-    public class ExtraClass
+    public class ExtraExtraClass
     {
         private int _n;
 
-        public ExtraClass(int n)
+        public ExtraExtraClass(int n)
         {
             _n = n;
         }
