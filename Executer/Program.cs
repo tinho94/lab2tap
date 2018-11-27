@@ -10,6 +10,7 @@ namespace Executer
     {
         static void Main()
         {
+            Console.WriteLine("prima prova commit");
             var a = Assembly.LoadFrom("../../../MyLibrary/bin/Debug/MyLibrary.dll");
            
             /*
