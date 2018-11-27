@@ -14,7 +14,7 @@ namespace Executer
            
             foreach (Type _class in a.GetTypes())
             {
-                if (_class.IsClass)
+                if (_class.IsClass && _class.GetConstructor(new Type[]{})!=null)
                 {
                     //Console.WriteLine("class:'"+_class+"'");
                     object instanceOfClass = Activator.CreateInstance(_class);
